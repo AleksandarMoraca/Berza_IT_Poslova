@@ -1,2 +1,2 @@
-# Berza_IT_Poslova
+# AleksandarMoraca.Berza_IT_Poslova
 Web programming project

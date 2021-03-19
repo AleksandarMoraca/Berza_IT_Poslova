@@ -13,8 +13,8 @@ body {
     font-family: sans-serif;
     min-height: 100vh;
     position: relative;
-    color: #1c698e;
-
+    background-image: url("bg1.jpg");
+    background-repeat: no-repeat;
 
 }
 
@@ -37,12 +37,12 @@ nav {
 
 nav ul {
     float: left;
-    margin-left: 200px;
+    margin-left: 230px;
 }
 nav ul li {
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
+    margin: 0 20px;
 }
 nav ul li a {
     color: #ffffff;
@@ -71,63 +71,6 @@ nav a:hover {
     display: none;
 }
 
-/* Dropdown */
-.dropdown {
-    float: right;
-    overflow: hidden;
-    line-height: 80px;
-    margin-left: 100px;
-    margin-right: 40px;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-    font-size: 18px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: #176384;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #01405b;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    line-height: 30px;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 5px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 /* Container1 */
 
@@ -138,11 +81,187 @@ nav a:hover {
    text-align: center;
 }
 
+.city {
+    padding: 50px;
+
+}
+.city-search {
+    width: 300px;
+    height: auto;
+}
+
+.submit-button {
+    background-color: #176384;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 70px;
+
+
+}
+
+
+.container2 {
+    display: flex;
+    margin: auto;
+    width: 1200px;
+    padding: 150px;
+    background-color: #ffffff;
+    height: auto;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.sign-in-button {
+    background-color: #176384;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+.sign-in-button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancel-btn-sign-in {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* Add padding to login */
+.sign-in {
+    padding: 16px;
+    display: block;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.no-account {
+    padding-top: 20px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancel-btn-sign-in {
+        width: 100%;
+    }
+}
+
+.sign-in-benefits{
+    display: block;
+    padding-left: 100px;
+}
+
+.container3 {
+    display: flex;
+    margin: auto;
+    width: 1200px;
+    padding: 100px;
+    background-color: #ffffff;
+    height: auto;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+
+/* Set a style for all buttons */
+.signupbtn {
+    background-color: #176384;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+
+
+/* Extra styles for the cancel button */
+.cancel-btn-sign-up {
+    padding: 14px 20px;
+    background-color: #f44336;
+    margin: 8px 0;
+    opacity: 0.9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancel-btn-sign-up, .signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.sign-up {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancel-btn-sign-up, .signupbtn {
+        width: 100%;
+    }
+}
+
 
 
 /* Footer */
-
-
 .foot {
     position: fixed;
     left: 0;

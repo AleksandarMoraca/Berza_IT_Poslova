@@ -32,18 +32,11 @@
         <li><a href="index.php" class="active"> Home </a></li>
         <li><a href="Jobs.php"> Jobs </a></li>
         <li><a href="Companies.php"> Companies </a></li>
-         <div class="dropdown">
-             <button class="dropbtn"><b>Sign In</b>
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdown">
-                <a href="#">For Employers</a>
-                <a href="#">For Companies</a>
-            </div>
-        </div>
+        <li><a href="SignInEmployees.php" >Sign In</a></li>
+        <li><a href="SignInCompanies.php">For Companies</a></li>
 
     </ul>
-    </nav>
+</nav>
 
 
 <div class="container1">
@@ -51,14 +44,14 @@
     <p>Don't worry, we'll find suitable job for you today!</p>
     <form method="get" action="cities.php">
         <div class="city">
-    <select name="city" >
-        <option value="Su">Subotica</option>
-        <option value="Bg">Beograd</option>
-        <option value="NS">Novi Sad</option>
-    </select>
-        <input type="submit" id="submit-button" value="Search">
+            <select name="city" class="city-search" >
+                <option value="Su">Subotica</option>
+                <option value="Bg">Beograd</option>
+                <option value="NS">Novi Sad</option>
+            </select>
+        <button class="submit-button"><i class="fa fa-search"></i></button>
         </div>
-</form>
+    </form>
 </div>
 
 
